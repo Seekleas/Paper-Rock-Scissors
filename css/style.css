@@ -89,12 +89,16 @@ body {
   text-transform: uppercase;
 }
 
+.userChoice i {
+  padding: 5px;
+}
+
 .paper, .rock, .scisors {
   margin: 15px auto;
   width: 30px;
   height: 30px;
   line-height: 30px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   color: #000;
 }
@@ -155,9 +159,13 @@ body {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   color: #000;
+}
+
+.cpuRandom i {
+  padding: 5px;
 }
 
 .cpuRandom:hover {
