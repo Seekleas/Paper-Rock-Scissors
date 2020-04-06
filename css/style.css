@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 100vh;
+  border-left: 1px solid #3264a7;
+  border-right: 1px solid #3264a7;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  padding: 20px 0;
+  background-color: #3264a7;
+  text-align: center;
+}
+
+.header p {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.heading .userH1, .heading .cpuH1, .heading .playButton {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.heading .userH1 h1, .heading .cpuH1 h1, .heading .playButton h1 {
+  padding-bottom: 20px;
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.gameArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.userChoice {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.userChoice h1 {
+  padding-bottom: 20px;
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.paper, .rock, .scisors {
+  margin: 15px auto;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: #000;
+}
+
+.paper:hover, .rock:hover, .scisors:hover {
+  color: #ccc;
+}
+
+.play {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.play button {
+  padding: 10px 0;
+  width: 90%;
+  max-width: 200px;
+  background-color: #76a1bd;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+  border: 1px solid #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.play button:hover {
+  color: #fff;
+  border-color: #fff;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.cpuChoice {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.cpuChoice h1 {
+  padding-bottom: 20px;
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cpuRandom {
+  margin: 15px auto;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 25px;
+  text-align: center;
+  color: #000;
+}
+
+.cpuRandom:hover {
+  color: #ccc;
+}
+
+.activeOptions {
+  -webkit-box-shadow: 0 0 3px 3px #0092f3;
+          box-shadow: 0 0 3px 3px #0092f3;
+}
+
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 15px;
+}
+
+.scoreboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scoreboard div:nth-child(1) {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-top: 5px;
+  padding: 5px 0;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #d2f2fab0;
+}
+
+.scoreboard div:nth-child(2) {
+  margin-top: 5px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding: 5px 0;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #d2f2fab0;
+}
+
+.scoreboard div:nth-child(3) {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin: 3px 0 15px 0;
+  padding: 10px 0;
+  color: #3264a7;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #aaa9a952;
+}
+
+.scoreboard div:nth-child(4) {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin: 3px 0 15px 0;
+  padding: 10px 0;
+  color: #3264a7;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #aaa9a952;
+}
+
+.info {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0 0 5px 5px;
+  font-size: 2rem;
+}
+
+.description, .resultInfo {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 10px 0 0 10px;
+  font-size: 1.4rem;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 800px;
+  height: 25px;
+  background-color: #3264a7;
+}
+
+.copyright {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  height: 100%;
+}
+
+.copyright p {
+  font-size: 1rem;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.technologies {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 10px;
+  height: 100%;
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: right;
+  line-height: 25px;
+}
+
+.technologies i {
+  padding: 0 5px;
+}
+
+.technologies i:hover {
+  color: #9fdff8;
+}
+/*# sourceMappingURL=style.css.map */

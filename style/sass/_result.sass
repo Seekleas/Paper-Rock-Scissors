@@ -1,0 +1,34 @@
+.results
+    +boxFlex(row, 100%)
+    padding-top: 15px
+
+.scoreboard
+    +boxFlex(row, 100%)
+    // border-top: 1px dashed #3264a7
+
+    div:nth-child(1)
+        flex-basis: 45%
+        margin-top: 5px
+        +sizeResult()
+        background-color: #d2f2fab0
+    div:nth-child(2)
+        margin-top: 5px
+        flex-basis: 45%
+        +sizeResult()
+        background-color: #d2f2fab0
+    div:nth-child(3)
+        flex-basis: 45%
+        +sizeScore()
+    div:nth-child(4)
+        flex-basis: 45%
+        +sizeScore()
+
+.info
+    flex-basis: 100%
+    padding: 0 0 5px 5px
+    font-size: 2rem 
+    
+.description, .resultInfo
+    flex-basis: 100%
+    padding: 10px 0 0 10px
+    font-size: 1.4rem
