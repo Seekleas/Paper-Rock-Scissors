@@ -44,24 +44,26 @@ const comparison = (user, cpu) => {
     } else if ((user == 1 && cpu === 2) || (user == 2 && cpu === 3) || (user == 3 && cpu === 1)) {
         resultOfGame.textContent = 'Result: You won!';
         userPoint.textContent++;
-        console.log(userPoint);
     } else {
         resultOfGame.textContent = 'Result: You lost!';
         cpuPoint.textContent++;
-        console.log(cpuPoint);
     }
 }
 
 const endingGame = (user, cpu) => {
     if (userPoint.textContent == 5) {
         document.querySelector('.info').textContent = ` End of game! You won ${user} to ${cpu}.`;
+        document.querySelector('.info').style.textAlign = 'center';
         descriptionRound.textContent = '';
         resultOfGame.textContent = '';
+        playBtn.setAttribute('disabled', 'disabled');
     }
     if (cpuPoint.textContent == 5) {
         document.querySelector('.info').textContent = ` End of game! You lost ${user} to ${cpu}.`;
+        document.querySelector('.info').style.textAlign = 'center';
         descriptionRound.textContent = '';
         resultOfGame.textContent = '';
+        playBtn.setAttribute('disabled', 'disabled');
     }
 }
 
