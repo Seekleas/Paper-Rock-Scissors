@@ -1,11 +1,11 @@
 .footer
     +boxFlex(row, 100%)
-    margin: 0 auto
     position: absolute
     left: 0
     right: 0
     bottom: 0
-    max-width: 800px
+    margin: 0 auto
+    max-width: 638px
     height: $sizeFooter
     background-color: #3264a7
 
@@ -30,3 +30,19 @@
         padding: 0 5px
     i:hover
         color: #9fdff8
+
+
+@media (min-width: 410px)
+    .footer
+        height: $sizeFooter + 10px
+        .copyright
+            p
+                font-size: 1.3rem
+                line-height: $sizeFooter + 10px
+        .technologies
+            font-size: 1.6rem
+            line-height: $sizeFooter + 10px
+
+@media (orientation: landscape)
+    .footer
+        position: static
