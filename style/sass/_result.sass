@@ -8,19 +8,23 @@
 
     div:nth-child(1)
         flex-basis: 45%
+        order: 1
         margin-top: 5px
         +sizeResult()
         background-color: #d2f2fab0
-    div:nth-child(2)
-        margin-top: 5px
+    div:nth-child(2)        
         flex-basis: 45%
+        order: 2
+        margin-top: 5px
         +sizeResult()
         background-color: #d2f2fab0
     div:nth-child(3)
         flex-basis: 45%
+        order: 3
         +sizeScore()
     div:nth-child(4)
         flex-basis: 45%
+        order: 4
         +sizeScore()
 
 .info
@@ -32,3 +36,42 @@
     flex-basis: 100%
     padding: 10px 0 0 10px
     font-size: 1.4rem
+
+@media (orientation: landscape) and (min-width: 532px)
+    .scoreboard
+        div:nth-child(1)
+            flex-basis: 24%
+            font-size: 1.6rem
+            margin: 0 0 5px 0
+            padding: 5px 0
+        div:nth-child(3)
+            flex-basis: 24%
+            order: 2
+            font-size: 1.6rem
+            margin: 0 0 5px 0
+            padding: 5px 0
+        div:nth-child(2)
+            flex-basis: 24%
+            order: 3
+            font-size: 1.6rem
+            margin: 0 0 5px 0
+            padding: 5px 0
+        div:nth-child(4)
+            flex-basis: 24%
+            font-size: 1.6rem
+            margin: 0 0 5px 0
+            padding: 5px 0
+    .info
+        font-size: 1.6rem
+    .description, .resultInfo
+        padding: 5px 0 0 5px
+        font-size: 1.2rem
+
+@media (orientation: landscape) and (min-width: 637px)
+    .scoreboard
+        div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4)
+            font-size: 1.8rem
+    .info
+        font-size: 1.8rem
+    .description, .resultInfo
+        font-size: 1.4rem

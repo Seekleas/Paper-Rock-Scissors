@@ -64,9 +64,42 @@
     box-shadow: 0 0 3px 3px #0092f3
 
 
-@media (min-width: 410px)
-    .paper, .rock, .scisors, .cpuRandom
-        width: $sizehUserOptions + 5px
-        height: $sizehUserOptions + 5px
-        line-height: $sizehUserOptions + 5px
+// @media (min-width: 410px)
+//     .paper, .rock, .scisors, .cpuRandom
+//         width: $sizehUserOptions + 5px
+//         height: $sizehUserOptions + 5px
+//         line-height: $sizehUserOptions + 5px
     
+@media (orientation: landscape) and (min-width: 532px)
+    .heading
+        padding-top: 5px
+        .userH1, .cpuH1, .playButton
+            h1
+                padding-bottom: 10px
+                font-size: 1.6rem
+    .paper, .rock, .scisors, .cpuRandom
+        margin: 5px auto
+        width: $sizehUserOptions - 5px
+        height: $sizehUserOptions - 5px
+        line-height: $sizehUserOptions - 5px
+        font-size: $sizehUserOptions - 15px
+    .play
+        button
+            padding: 5px 0
+            font-size: 1.6rem
+
+@media (orientation: landscape) and (min-width: 637px)
+    .heading
+        padding-top: 10px
+        .userH1, .cpuH1, .playButton
+            h1
+                padding-bottom: 15px
+                font-size: 2rem
+    .paper, .rock, .scisors, .cpuRandom
+        margin: 10px auto
+        line-height: $sizehUserOptions + 10px
+        font-size: $sizehUserOptions - 10px
+    .play
+        button
+            padding: 10px 0
+            font-size: 2rem

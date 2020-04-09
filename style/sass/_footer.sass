@@ -32,7 +32,18 @@
         color: #9fdff8
 
 
-@media (min-width: 410px)
+@media (orientation: landscape) and (min-width: 532px)
+    .footer
+        height: $sizeFooter
+        .copyright
+            p
+                line-height: $sizeFooter
+                font-size: 1.1rem
+        .technologies
+            line-height: $sizeFooter
+            font-size: 1.4rem
+
+@media (orientation: portrait) and (min-width: 383px)
     .footer
         height: $sizeFooter + 10px
         .copyright
@@ -43,6 +54,24 @@
             font-size: 1.6rem
             line-height: $sizeFooter + 10px
 
-@media (orientation: landscape)
+@media (orientation: landscape) and (min-width: 637px)
     .footer
-        position: static
+        height: $sizeFooter + 15px
+        .copyright
+            p
+                font-size: 1.5rem
+                line-height: $sizeFooter + 15px
+        .technologies
+            font-size: 1.8rem
+            line-height: $sizeFooter + 15px
+
+@media (orientation: landscape) and (min-width: 637px) and (min-height: 359px)
+    .footer
+        height: $sizeFooter
+        .copyright
+            p
+                font-size: 1.2rem
+                line-height: $sizeFooter
+        .technologies
+            font-size: 1.4rem
+            line-height: $sizeFooter
