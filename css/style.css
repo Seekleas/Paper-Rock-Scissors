@@ -64,6 +64,24 @@ body {
   }
 }
 
+@media (min-width: 641px) {
+  .header {
+    height: 60px;
+  }
+  .header p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-height: 374px) {
+  .header {
+    height: 40px;
+  }
+  .header p {
+    font-size: 1.6rem;
+  }
+}
+
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,6 +271,23 @@ body {
   }
 }
 
+@media (min-width: 641px) {
+  .heading {
+    padding-top: 15px;
+  }
+}
+
+@media (min-height: 374px) {
+  .heading .userH1 h1, .heading .cpuH1 h1, .heading .playButton h1 {
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  .paper, .rock, .scisors, .cpuRandom {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
 .results {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,6 +401,9 @@ body {
   .scoreboard div:nth-child(1) {
     -ms-flex-preferred-size: 24%;
         flex-basis: 24%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     font-size: 1.6rem;
     margin: 0 0 5px 0;
     padding: 5px 0;
@@ -393,6 +431,9 @@ body {
   .scoreboard div:nth-child(4) {
     -ms-flex-preferred-size: 24%;
         flex-basis: 24%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
     font-size: 1.6rem;
     margin: 0 0 5px 0;
     padding: 5px 0;
@@ -415,6 +456,54 @@ body {
   }
   .description, .resultInfo {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 641px) {
+  .scoreboard div:nth-child(1) {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    font-size: 1.8rem;
+  }
+  .scoreboard div:nth-child(3) {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 1.8rem;
+  }
+  .scoreboard div:nth-child(2) {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 1.8rem;
+  }
+  .scoreboard div:nth-child(4) {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    font-size: 1.8rem;
+  }
+  .info {
+    font-size: 2rem;
+  }
+  .description, .resultInfo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-height: 374px) {
+  .scoreboard div:nth-child(1), .scoreboard div:nth-child(2), .scoreboard div:nth-child(3), .scoreboard div:nth-child(4) {
+    font-size: 1.3rem;
+    padding: 3px 0;
+  }
+  .info {
+    font-size: 1.5rem;
+  }
+  .description, .resultInfo {
+    font-size: 1.2rem;
   }
 }
 
@@ -528,6 +617,34 @@ body {
   }
   .footer .technologies {
     font-size: 1.4rem;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 641px) {
+  .footer {
+    height: 40px;
+  }
+  .footer .copyright p {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+  .footer .technologies {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+}
+
+@media (min-height: 374px) {
+  .footer {
+    height: 25px;
+  }
+  .footer .copyright p {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+  .footer .technologies {
+    font-size: 1.3rem;
     line-height: 25px;
   }
 }
